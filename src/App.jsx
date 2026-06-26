@@ -509,7 +509,7 @@ export default function App() {
     }
     
     if (tokenClientRef.current) {
-      tokenClientRef.current.requestAccessToken({ prompt: 'select_account consent' });
+      tokenClientRef.current.requestAccessToken({ prompt: 'select_account' });
     } else {
       // Si no se inicializó correctamente (por ejemplo, porque se cambió el Client ID recientemente)
       try {
@@ -524,7 +524,7 @@ export default function App() {
             }
           },
         });
-        tokenClientRef.current.requestAccessToken({ prompt: 'select_account consent' });
+        tokenClientRef.current.requestAccessToken({ prompt: 'select_account' });
       } catch (err) {
         console.error('Error al conectar Google OAuth:', err);
         alert('No se pudo conectar a Google. Revisa que tu Client ID sea correcto y que estés en un dominio autorizado.');
