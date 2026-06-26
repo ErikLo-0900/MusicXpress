@@ -301,7 +301,7 @@ export default function App() {
 
   // Integración con Media Session API
   useEffect(() => {
-    if (!navigator.mediaSession || !currentTrack) return;
+    if (!navigator.mediaSession || !currentTrack || !window.MediaMetadata) return;
 
     const generateArtwork = (title, artist) => {
       try {

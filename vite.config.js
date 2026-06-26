@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './', // Genera rutas relativas para el despliegue portable en GitHub Pages
+  base: '/MusicXpress/', // Configura la ruta base correcta para el despliegue en GitHub Pages
 })
