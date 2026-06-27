@@ -52,7 +52,7 @@ const DEMO_TRACKS = [
 export default function App() {
   // Credenciales por defecto obtenidas de tu configuración (hardcoded)
   const DEFAULT_CLIENT_ID = '453073155462-k34c64009fj03d44eqtr6k49ebv6n9tf.apps.googleusercontent.com';
-  const DEFAULT_FOLDER_ID = '1WcktOLMC8HyKtVeAULlip53vLZkRIQRW';
+  const DEFAULT_FOLDER_ID = '1WcktOLMC8HyKtVeAULlip53vLZkRlQRW';
 
   // Configuración de Google Drive
   const [clientId, setClientId] = useState(() => localStorage.getItem('mx_client_id') || DEFAULT_CLIENT_ID);
